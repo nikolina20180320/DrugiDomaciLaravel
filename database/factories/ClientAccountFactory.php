@@ -17,7 +17,8 @@ class ClientAccountFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'account_number'=>$this->faker->numberBetween(100,200).'-'.$this->faker->numberBetween(1,999).'-'.$this->faker->numberBetween(10,99),
+            'balance'=>$this->faker->randomFloat(2,0,700)
         ];
     }
 }

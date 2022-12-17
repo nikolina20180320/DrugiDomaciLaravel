@@ -17,7 +17,10 @@ class CardFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'card_number'=>$this->faker->numberBetween(100000,999999).'',
+            'expiration_date'=>$this->faker->date(),
+            'client_account_id'=>$this->faker->numberBetween(1,10),
+            'card_manufacturer_id'=>$this->faker->numberBetween(1,10)
         ];
     }
 }

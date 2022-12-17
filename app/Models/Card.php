@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Card extends Model
 {
     use HasFactory;
-    protected $fillable=['card_number','expiration_date','client_account_id'];
+    protected $fillable=['card_number','expiration_date','client_account_id','card_manufacturer_id'];
 
     public function client_account() {
         return $this->belongsTo(ClientAccount::class);

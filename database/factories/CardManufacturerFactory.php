@@ -17,7 +17,9 @@ class CardManufacturerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'legal_name'=>$this->faker->company,
+            'name'=>$this->faker->catchPhrase,
+            'location'=>$this->faker->address
         ];
     }
 }

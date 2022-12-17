@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('card_number');
+            $table->text('card_number');
             $table->date('expiration_date');
             $table->foreignId('client_account_id')->constrained()->restrictOnDelete();
         });

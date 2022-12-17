@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('client_accounts', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('account_number');
+            $table->text('account_number');
             $table->decimal('balance');
         });
     }
